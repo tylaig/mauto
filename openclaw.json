@@ -1,0 +1,15 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "lan",
+    "port": 18789,
+    "auth": {
+      "mode": "token"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "https://claw.ia.meusuper.app"
+      ]
+    }
+  }
+}
