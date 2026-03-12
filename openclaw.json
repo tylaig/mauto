@@ -12,6 +12,10 @@
       ]
     }
   },
+  "commands": {
+    "debug": true,
+    "config": true
+  },
   "agents": {
     "defaults": {
       "model": {
@@ -33,6 +37,14 @@
         "fallbacks": [
           "meugateway/gemini-2.5-flash",
           "meugateway/gemini-3-flash"
+        ]
+      },
+      "pdfModel": {
+        "primary": "meugateway/claude-opus-4-6-thinking",
+        "fallbacks": [
+          "meugateway/claude-sonnet-4-6",
+          "meugateway/gemini-3.1-pro-high",
+          "meugateway/gpt-oss-120b-medium"
         ]
       },
       "models": {
