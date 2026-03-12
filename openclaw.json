@@ -15,20 +15,20 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "meugateway/claude-opus-4-6"
+        "primary": "cliproxy/claude-opus-4-6"
       }
     }
   },
   "models": {
     "providers": {
-      "meugateway": {
+      "cliproxy": {
         "baseUrl": "https://proxy.ia.meusuper.app/v1",
         "apiKey": "API-123456",
         "api": "openai-completions",
         "models": [
           {
             "id": "claude-opus-4-6",
-            "name": "Claude Opus 4.6 via CLIProxyAPI"
+            "name": "Claude Opus 4.6 via CLI Proxy API"
           }
         ]
       }
