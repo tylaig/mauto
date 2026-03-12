@@ -4,7 +4,8 @@
     "bind": "lan",
     "port": 18789,
     "auth": {
-      "mode": "token"
+      "mode": "token",
+      "token": "2IUJYkqFwHimR1DOwKvYsl2Smy3Tvzo1"
     },
     "controlUi": {
       "allowedOrigins": [
@@ -15,6 +16,19 @@
   "commands": {
     "debug": true,
     "config": true
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8420159823:AAE64yydwpuWScQVSInRoStTIjgzshxi1-Y",
+      "dmPolicy": "pairing",
+      "groupPolicy": "open",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
   },
   "agents": {
     "defaults": {
