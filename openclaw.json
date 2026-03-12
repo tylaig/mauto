@@ -15,20 +15,113 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "cliproxy/claude-opus-4-6"
+        "primary": "meugateway/claude-opus-4-6-thinking",
+        "fallbacks": [
+          "meugateway/claude-sonnet-4-6",
+          "meugateway/gemini-3.1-pro-high",
+          "meugateway/gemini-3-pro-high",
+          "meugateway/gemini-3.1-pro-low",
+          "meugateway/gemini-3-pro-low",
+          "meugateway/gpt-oss-120b-medium",
+          "meugateway/gemini-2.5-flash",
+          "meugateway/gemini-3-flash",
+          "meugateway/gemini-2.5-flash-lite"
+        ]
+      },
+      "imageModel": {
+        "primary": "meugateway/gemini-3.1-flash-image",
+        "fallbacks": [
+          "meugateway/gemini-2.5-flash",
+          "meugateway/gemini-3-flash"
+        ]
+      },
+      "models": {
+        "meugateway/claude-opus-4-6-thinking": {
+          "alias": "Claude Opus 4.6 Thinking"
+        },
+        "meugateway/claude-sonnet-4-6": {
+          "alias": "Claude Sonnet 4.6"
+        },
+        "meugateway/gpt-oss-120b-medium": {
+          "alias": "GPT OSS 120B Medium"
+        },
+        "meugateway/gemini-3.1-pro-high": {
+          "alias": "Gemini 3.1 Pro High"
+        },
+        "meugateway/gemini-3.1-pro-low": {
+          "alias": "Gemini 3.1 Pro Low"
+        },
+        "meugateway/gemini-2.5-flash-lite": {
+          "alias": "Gemini 2.5 Flash Lite"
+        },
+        "meugateway/gemini-3.1-flash-image": {
+          "alias": "Gemini 3.1 Flash Image"
+        },
+        "meugateway/gemini-3-pro-low": {
+          "alias": "Gemini 3 Pro Low"
+        },
+        "meugateway/gemini-3-pro-high": {
+          "alias": "Gemini 3 Pro High"
+        },
+        "meugateway/gemini-2.5-flash": {
+          "alias": "Gemini 2.5 Flash"
+        },
+        "meugateway/gemini-3-flash": {
+          "alias": "Gemini 3 Flash"
+        }
       }
     }
   },
   "models": {
     "providers": {
-      "cliproxy": {
+      "meugateway": {
         "baseUrl": "https://proxy.ia.meusuper.app/v1",
         "apiKey": "API-123456",
         "api": "openai-completions",
         "models": [
           {
-            "id": "claude-opus-4-6",
-            "name": "Claude Opus 4.6 via CLI Proxy API"
+            "id": "claude-opus-4-6-thinking",
+            "name": "Claude Opus 4.6 Thinking via CLI Proxy API"
+          },
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "Claude Sonnet 4.6 via CLI Proxy API"
+          },
+          {
+            "id": "gpt-oss-120b-medium",
+            "name": "GPT OSS 120B Medium via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3.1-pro-high",
+            "name": "Gemini 3.1 Pro High via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3.1-pro-low",
+            "name": "Gemini 3.1 Pro Low via CLI Proxy API"
+          },
+          {
+            "id": "gemini-2.5-flash-lite",
+            "name": "Gemini 2.5 Flash Lite via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3.1-flash-image",
+            "name": "Gemini 3.1 Flash Image via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3-pro-low",
+            "name": "Gemini 3 Pro Low via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3-pro-high",
+            "name": "Gemini 3 Pro High via CLI Proxy API"
+          },
+          {
+            "id": "gemini-2.5-flash",
+            "name": "Gemini 2.5 Flash via CLI Proxy API"
+          },
+          {
+            "id": "gemini-3-flash",
+            "name": "Gemini 3 Flash via CLI Proxy API"
           }
         ]
       }
